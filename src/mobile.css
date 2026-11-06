@@ -1,0 +1,11 @@
+html { background: #1c1b19; }
+body { margin: 0; }
+input, textarea, button { font-size: 16px; }
+input[type="date"] { color-scheme: dark; min-width: 0; }
+@media (max-width: 480px) {
+  #root > div { padding: max(20px, env(safe-area-inset-top)) 12px max(60px, env(safe-area-inset-bottom)) !important; }
+  input, textarea { min-width: 0; }
+  .vehicle-fields { grid-template-columns: 1fr !important; }
+  .entry-fields { grid-template-columns: 1fr !important; }
+  input, textarea { font-size: 16px !important; }
+}

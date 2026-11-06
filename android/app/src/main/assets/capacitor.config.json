@@ -1,0 +1,8 @@
+{
+	"appId": "org.maintenancelog.app",
+	"appName": "Service Log",
+	"webDir": "dist",
+	"android": {
+		"backgroundColor": "#1C1B19"
+	}
+}

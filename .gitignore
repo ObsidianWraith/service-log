@@ -1,0 +1,14 @@
+node_modules/
+dist/
+.gradle/
+**/build/
+local.properties
+.env*
+*.keystore
+*.jks
+*.apk
+*.aab
+android-signing/
+*backup*.json
+*.log
+.DS_Store
