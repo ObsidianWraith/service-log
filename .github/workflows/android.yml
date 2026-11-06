@@ -18,7 +18,7 @@ jobs:
         with:
           distribution: temurin
           java-version: 21
-      - run: sdkmanager "platforms;android-35" "build-tools;35.0.0"
+      - run: '"$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager" "platforms;android-35" "build-tools;35.0.0"'
       - run: npm ci
       - run: npm run android:sync
       - run: chmod +x android/gradlew && cd android && ./gradlew assembleDebug
@@ -26,3 +26,4 @@ jobs:
         with:
           name: Service-Log-Android
           path: android/app/build/outputs/apk/debug/app-debug.apk
+
